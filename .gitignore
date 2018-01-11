@@ -1,0 +1,15 @@
+/*
+
+!.gitignore
+
+!/setup*.sh
+
+!/.ssh
+/.ssh/*
+!/.ssh/config
+!/.ssh/conf.d
+/.ssh/conf.d/hosts/*
+!/.ssh/conf.d/hosts/github.com
+
+!/.bash.d
+!/.bash_profile
