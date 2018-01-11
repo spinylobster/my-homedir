@@ -2,16 +2,12 @@
 
 function main () {
   if [ `is_installed brew` = 'false' ]; then
-    xcode-install
     homebrew-install
   fi
 }
 
-function xcode-install () {
-  sudo xcodebuild -license
-  xcode-select --install
-}
 function homebrew-install () {
+  sudo xcodebuild -license
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 }
 
